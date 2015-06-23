@@ -49,7 +49,7 @@ ncurses_utils    //included
 
 xterm-256color terminal (it may not need this, but it hasn't been tried without)
 
-When I write my ncurses programs I use a style sheet type of structure so that I define colors (I'll leave the 'u' out to keep the American audience happy) in the same place, especially as I write programs that utilise all 256 colors and like to define the pairs without using magic numbers.  There's nothing special about it, it just makes it easier to alter.  This is done in ncurses_scheme which is included in this repo.
+When I write my ncurses programs I use a style sheet type of structure so that I define colors (I'll leave the 'u' out to keep the American audience happy) in the same place, especially as I write programs that utilise all 256 colors and like to define the pairs without using magic numbers.  There's nothing special about it, it just makes it easier to alter.  This is done in ncurses_scheme which is included in this repo.  I also use this file to initialise curses mode.
 
 The only other thing of note is ncurses_utils which has a hand full of functions; some of which are not used at all for msg_box, but you will notice that there is an overloaded db() function that calls the msg_box class.  The things to note are as follows:
 
